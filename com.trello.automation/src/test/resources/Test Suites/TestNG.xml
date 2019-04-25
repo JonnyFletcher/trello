@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Regression Test">
+  <test name="Regression Test">
+    <classes>
+      <class name="runners.TestRunner"/>
+    </classes>
+  </test>
+</suite>

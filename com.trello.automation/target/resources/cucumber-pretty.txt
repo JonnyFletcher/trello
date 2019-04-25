@@ -1,0 +1,67 @@
+@card @add_card
+Feature: Add card
+  
+  As an existing user,
+  I want to add a card to a board,
+  So that I can remind myself to do something
+
+  ######################################################################################################################
+  @gui
+  Scenario Outline: Add card - Empty list                   [90m# Board/Add Card.feature:11[0m
+    [36mGiven [0m[36mI have already created a board named <board_name>[0m
+    [36mAnd [0m[36mthe board has a list named To Do[0m
+    [36mWhen [0m[36mI add a card named Buy milk to the To Do list[0m
+    [36mThen [0m[36mthe Buy milk card is displayed in the To Do list[0m
+
+    Examples: 
+
+  @card @add_card @gui
+  Scenario Outline: Add card - Empty list                            [90m# Board/Add Card.feature:21[0m
+    [32mGiven [0m[32mI have already created a board named [0m[32m[1mAdd card - Empty list[0m [90m# ActionSteps.iHaveAlreadyCreatedABoardCalledX(String)[0m
+    [32mAnd [0m[32mthe board has a list named [0m[32m[1mTo Do[0m                             [90m# BoardPageSteps.theBoardHasAListNamedX(String)[0m
+    [32mWhen [0m[32mI add a card named [0m[32m[1mBuy milk[0m[32m to the [0m[32m[1mTo Do[0m[32m list[0m               [90m# BoardPageSteps.iAddACardNamedXToTheXList(String,String)[0m
+    [32mThen [0m[32mthe [0m[32m[1mBuy milk[0m[32m card is displayed in the [0m[32m[1mTo Do[0m[32m list[0m            [90m# BoardPageSteps.theXCardIsDisplayedInTheXList(String,String)[0m
+@card @move_card
+Feature: Move card
+  
+  As an existing user,
+  I want to move a card to another list,
+  So that I can monitor progress of tasks
+
+  ######################################################################################################################
+  @gui
+  Scenario Outline: Move card - Single card in list                    [90m# Board/Move Card.feature:11[0m
+    [36mGiven [0m[36mI have already created a board named <board_name>[0m
+    [36mAnd [0m[36mthe <board_name> board has the following lists[0m
+    [36mAnd [0m[36mthe To Do list has the following cards[0m
+    [36mWhen [0m[36mI move the Buy milk card from the To Do list to the Done list[0m
+    [36mThen [0m[36mthe Buy milk card is displayed in the Done list[0m
+
+    Examples: 
+
+  @card @gui @move_card
+  Scenario Outline: Move card - Single card in list                            [90m# Board/Move Card.feature:25[0m
+    [32mGiven [0m[32mI have already created a board named [0m[32m[1mMove card - Single card in list[0m [90m# ActionSteps.iHaveAlreadyCreatedABoardCalledX(String)[0m
+    [32mAnd [0m[32mthe [0m[32m[1mMove card - Single card in list[0m[32m board has the following lists[0m      [90m# BoardPageSteps.theXBoardHasTheFollowingLists(String,DataTable)[0m
+    [32mAnd [0m[32mthe [0m[32m[1mTo Do[0m[32m list has the following cards[0m                                 [90m# BoardPageSteps.theXListHasTheFollowingCards(String,DataTable)[0m
+    [32mWhen [0m[32mI move the [0m[32m[1mBuy milk[0m[32m card from the [0m[32m[1mTo Do[0m[32m list to the [0m[32m[1mDone[0m[32m list[0m         [90m# BoardPageSteps.iMoveTheXCardToTheXList(String,String,String)[0m
+    [32mThen [0m[32mthe [0m[32m[1mBuy milk[0m[32m card is displayed in the [0m[32m[1mDone[0m[32m list[0m                       [90m# BoardPageSteps.theXCardIsDisplayedInTheXList(String,String)[0m
+
+  ######################################################################################################################
+  @gui
+  Scenario Outline: Move card - Multiple cards in list                   [90m# Board/Move Card.feature:44[0m
+    [36mGiven [0m[36mI have already created a board named <board_name>[0m
+    [36mAnd [0m[36mthe <board_name> board has the following lists[0m
+    [36mAnd [0m[36mthe To Do list has the following cards[0m
+    [36mWhen [0m[36mI move the Buy bread card from the To Do list to the Doing list[0m
+    [36mThen [0m[36mthe Buy bread card is displayed in the Doing list[0m
+
+    Examples: 
+
+  @card @gui @move_card
+  Scenario Outline: Move card - Multiple cards in list                            [90m# Board/Move Card.feature:66[0m
+    [32mGiven [0m[32mI have already created a board named [0m[32m[1mMove card - Multiple cards in list[0m [90m# ActionSteps.iHaveAlreadyCreatedABoardCalledX(String)[0m
+    [32mAnd [0m[32mthe [0m[32m[1mMove card - Multiple cards in list[0m[32m board has the following lists[0m      [90m# BoardPageSteps.theXBoardHasTheFollowingLists(String,DataTable)[0m
+    [32mAnd [0m[32mthe [0m[32m[1mTo Do[0m[32m list has the following cards[0m                                    [90m# BoardPageSteps.theXListHasTheFollowingCards(String,DataTable)[0m
+    [32mWhen [0m[32mI move the [0m[32m[1mBuy bread[0m[32m card from the [0m[32m[1mTo Do[0m[32m list to the [0m[32m[1mDoing[0m[32m list[0m          [90m# BoardPageSteps.iMoveTheXCardToTheXList(String,String,String)[0m
+    [32mThen [0m[32mthe [0m[32m[1mBuy bread[0m[32m card is displayed in the [0m[32m[1mDoing[0m[32m list[0m                        [90m# BoardPageSteps.theXCardIsDisplayedInTheXList(String,String)[0m

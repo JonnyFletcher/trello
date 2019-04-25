@@ -1,0 +1,210 @@
+[
+  {
+    "source": "the (.*) card is displayed in the (.*) list",
+    "steps": [
+      {
+        "name": "the Buy milk card is displayed in the To Do list",
+        "aggregatedDurations": {
+          "average": 1.588499,
+          "median": 1.588499
+        },
+        "durations": [
+          {
+            "duration": 1.588499,
+            "location": "Board/Add Card.feature:16"
+          }
+        ]
+      },
+      {
+        "name": "the Buy milk card is displayed in the Done list",
+        "aggregatedDurations": {
+          "average": 0.0683712,
+          "median": 0.0683712
+        },
+        "durations": [
+          {
+            "duration": 0.0683712,
+            "location": "Board/Move Card.feature:20"
+          }
+        ]
+      },
+      {
+        "name": "the Buy bread card is displayed in the Doing list",
+        "aggregatedDurations": {
+          "average": 0.0584891,
+          "median": 0.0584891
+        },
+        "durations": [
+          {
+            "duration": 0.0584891,
+            "location": "Board/Move Card.feature:61"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "the (.*) list has the following cards",
+    "steps": [
+      {
+        "name": "the To Do list has the following cards",
+        "aggregatedDurations": {
+          "average": 6.38322555,
+          "median": 6.38322555
+        },
+        "durations": [
+          {
+            "duration": 1.5165203,
+            "location": "Board/Move Card.feature:17"
+          },
+          {
+            "duration": 11.2499308,
+            "location": "Board/Move Card.feature:51"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "the (.*) board has the following lists",
+    "steps": [
+      {
+        "name": "the Move card - Single card in list board has the following lists",
+        "aggregatedDurations": {
+          "average": 2.8862969,
+          "median": 2.8862969
+        },
+        "durations": [
+          {
+            "duration": 2.8862969,
+            "location": "Board/Move Card.feature:14"
+          }
+        ]
+      },
+      {
+        "name": "the Move card - Multiple cards in list board has the following lists",
+        "aggregatedDurations": {
+          "average": 3.8967454,
+          "median": 3.8967454
+        },
+        "durations": [
+          {
+            "duration": 3.8967454,
+            "location": "Board/Move Card.feature:47"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I have already created a board named (.*)",
+    "steps": [
+      {
+        "name": "I have already created a board named Add card - Empty list",
+        "aggregatedDurations": {
+          "average": 22.7411647,
+          "median": 22.7411647
+        },
+        "durations": [
+          {
+            "duration": 22.7411647,
+            "location": "Board/Add Card.feature:13"
+          }
+        ]
+      },
+      {
+        "name": "I have already created a board named Move card - Single card in list",
+        "aggregatedDurations": {
+          "average": 23.1860144,
+          "median": 23.1860144
+        },
+        "durations": [
+          {
+            "duration": 23.1860144,
+            "location": "Board/Move Card.feature:13"
+          }
+        ]
+      },
+      {
+        "name": "I have already created a board named Move card - Multiple cards in list",
+        "aggregatedDurations": {
+          "average": 24.5787379,
+          "median": 24.5787379
+        },
+        "durations": [
+          {
+            "duration": 24.5787379,
+            "location": "Board/Move Card.feature:46"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I move the (.*) card from the (.*) list to the (.*) list",
+    "steps": [
+      {
+        "name": "I move the Buy milk card from the To Do list to the Done list",
+        "aggregatedDurations": {
+          "average": 3.1161672,
+          "median": 3.1161672
+        },
+        "durations": [
+          {
+            "duration": 3.1161672,
+            "location": "Board/Move Card.feature:19"
+          }
+        ]
+      },
+      {
+        "name": "I move the Buy bread card from the To Do list to the Doing list",
+        "aggregatedDurations": {
+          "average": 1.7551023,
+          "median": 1.7551023
+        },
+        "durations": [
+          {
+            "duration": 1.7551023,
+            "location": "Board/Move Card.feature:60"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "the board has a list named (.*)",
+    "steps": [
+      {
+        "name": "the board has a list named To Do",
+        "aggregatedDurations": {
+          "average": 1.4951312,
+          "median": 1.4951312
+        },
+        "durations": [
+          {
+            "duration": 1.4951312,
+            "location": "Board/Add Card.feature:14"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I add a card named (.*) to the (.*) list",
+    "steps": [
+      {
+        "name": "I add a card named Buy milk to the To Do list",
+        "aggregatedDurations": {
+          "average": 5.7303982,
+          "median": 5.7303982
+        },
+        "durations": [
+          {
+            "duration": 5.7303982,
+            "location": "Board/Add Card.feature:15"
+          }
+        ]
+      }
+    ]
+  }
+]
